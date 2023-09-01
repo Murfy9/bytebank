@@ -1,24 +1,25 @@
-<p align="center"> <img src="https://imgur.com/1mc1qX7.png" alt="JavaScript: trabalhando com threads para requisições simultâneas"> </p>
+<div align="center">
+<h1>📚 Bytebank: Cotação em tempo real!<br/>
+Curso na Alura - JavaScript: trabalhando com threads para requisições simultâneas</h1>
 
-<hr>
+<h2>Aprendendo o que são Threads e Multithread; entendendo sobre concorrência e paralelismo, construindo Web Workers utilizando a lib Chart.js e compreendendo conceitos de Task  Queue,  Event loop e Call stack.</h2>
+</div>
 
-<p align="center"> <img src="https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png" alt="Logo da Alura"> </p>
-<p align="center">Bytebank: o seu banco digital!</p>
+## 🔨 Tecnologias utilizadas durante o curso
 
-## Assuntos abordados durante o curso
+ 📚 HTML 
+ 📚 CSS
+ 📚 JavaScript
 
-- Fetch API
-- Threads
-- Concorrência
-- Paralelismo
-- Event Loop
-- Task Queue
-- WebWorkers
-- Single Thread
-- MultiThread
+## 📚 Aprendizado
 
-## Tecnologias utilizadas no projeto
-
-- HTML
-- CSS
-- JavaScript
+- Instalar a biblioteca Chart.js via CDN.
+- Fetch API.
+- Threads.
+- Concorrência.
+- Paralelismo.
+- Event Loop.
+- Task Queue.
+- WebWorkers.
+- Single Thread.
+- MultiThread.
