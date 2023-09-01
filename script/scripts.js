@@ -114,7 +114,7 @@ const graficoParaLibra = new Chart(graficoLibra, {
   },
 });
 
-let workerLibra = new Worker("./script/workers/workerLIbra.js");
+let workerLibra = new Worker("./script/workers/workerLibra.js");
 workerLibra.postMessage("libra");
 
 workerLibra.addEventListener("message", (event) => {
