@@ -1,6 +1,7 @@
 .dadosDolar,
 .dadosIene,
-.dadosEuro {
+.dadosEuro,
+.dadosLibra {
   margin: 3em auto;
   padding: 2em;
   display: flex;
@@ -36,6 +37,10 @@
 
 .grafico__ilustracao-euro {
   background-image: url("../imagens/euro.png");
+}
+
+.grafico__ilustracao-libra {
+  background-image: url("../imagens/libra.png");
 }
 
 .grafico__titulo h2 {

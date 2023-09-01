@@ -14,7 +14,7 @@
 <body class="container">
   <aside class="sidebar">
     <img src="./imagens/logo.png" alt="Logo do bytebank" />
-    <img src="./imagens/avatar.jpg" alt="Avatar do usuário" class="sidebar__avatar" />
+    <img src="./imagens/avatar.png" alt="Avatar do usuário" class="sidebar__avatar" />
     <h2>Pedro Xavier</h2>
     <hr class="sidebar__linha" />
     <nav class="sidebar__links">
@@ -74,6 +74,21 @@
       <div class="investimentos">
         <h2>Valores da moeda</h2>
         <ul class="investimentos__lista" id="euro" data-lista></ul>
+    </article>
+
+    <article class="dadosLibra">
+      <div class="grafico">
+        <div class="grafico__titulo">
+          <span class="grafico__ilustracao-libra"></span>
+          <h2>Variação da moeda desde o login</h2>
+        </div>
+        <canvas id="graficoLibra"></canvas>
+      </div>
+
+
+      <div class="investimentos">
+        <h2>Valores da moeda</h2>
+        <ul class="investimentos__lista" id="libra" data-lista></ul>
     </article>
 
     <footer class="rodape">

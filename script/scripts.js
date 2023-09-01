@@ -1,7 +1,8 @@
 import selecionaCotacao from "./imprimeCotacao.js";
 
-const graficoDolar = document.getElementById("graficoDolar");
+// Dólar Cotação
 
+const graficoDolar = document.getElementById("graficoDolar");
 const graficoParaDolar = new Chart(graficoDolar, {
   type: "line",
   data: {
@@ -42,8 +43,9 @@ workerDolar.addEventListener("message", (event) => {
   adicionarDados(graficoParaDolar, tempo, valor);
 });
 
-const graficoIene = document.getElementById("graficoIene");
+// Iene Cotação
 
+const graficoIene = document.getElementById("graficoIene");
 const graficoParaIene = new Chart(graficoIene, {
   type: "line",
   data: {
@@ -68,8 +70,9 @@ workerIene.addEventListener("message", (event) => {
   selecionaCotacao("iene", valor);
 });
 
-const graficoEuro = document.getElementById("graficoEuro");
+// Euro Cotação
 
+const graficoEuro = document.getElementById("graficoEuro");
 const graficoParaEuro = new Chart(graficoEuro, {
   type: "line",
   data: {
@@ -92,4 +95,31 @@ workerEuro.addEventListener("message", (event) => {
   let valor = event.data.ask;
   adicionarDados(graficoParaEuro, tempo, valor);
   selecionaCotacao("euro", valor);
+});
+
+// Libra Cotação
+
+const graficoLibra = document.getElementById("graficoLibra");
+const graficoParaLibra = new Chart(graficoLibra, {
+  type: "line",
+  data: {
+    labels: [],
+    datasets: [
+      {
+        label: "Libra",
+        data: [],
+        borderWidth: 1,
+      },
+    ],
+  },
+});
+
+let workerLibra = new Worker("./script/workers/workerLIbra.js");
+workerLibra.postMessage("libra");
+
+workerLibra.addEventListener("message", (event) => {
+  let tempo = geraHorario();
+  let valor = event.data.ask;
+  adicionarDados(graficoParaLibra, tempo, valor);
+  selecionaCotacao("libra", valor);
 });

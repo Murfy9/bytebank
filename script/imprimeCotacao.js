@@ -15,6 +15,7 @@ function imprimeCotacao(lista, nome, valor) {
     "dolar": "dolares",
     "iene": "ienes",
     "euro": "euros",
+    "libra": "libras",
   };
 
   for (let multiplicador = 1; multiplicador <= 1000; multiplicador *= 10) {
